@@ -16,6 +16,9 @@ importers:
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
+      lucide:
+        specifier: ^0.396.0
+        version: 0.396.0
       lucide-react:
         specifier: ^0.396.0
         version: 0.396.0(react@18.3.1)
@@ -1752,6 +1755,12 @@ packages:
       }
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0
+
+  lucide@0.396.0:
+    resolution:
+      {
+        integrity: sha512-oRyzWS/T4dcy39KbCZbDhI01d/SbAhIyZ796XiIwniRsVuuB+0LtPcZ4+Em+CLoAuAEV03/7Ttf41XMyxy8DBA==,
+      }
 
   merge2@1.4.1:
     resolution:
@@ -3866,6 +3875,8 @@ snapshots:
   lucide-react@0.396.0(react@18.3.1):
     dependencies:
       react: 18.3.1
+
+  lucide@0.396.0: {}
 
   merge2@1.4.1: {}
 

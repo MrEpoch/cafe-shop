@@ -5,11 +5,10 @@ import LandingSection from "@/components/shared/Home/LandingSection";
 
 export default function Home() {
   return (
-    <main className="min-h-screen w-full bg-cafe-background flex flex-col gap-12">
+    <main className="min-h-screen px-16 max-w-screen-xl mx-auto  w-full bg-cafe-background flex flex-col gap-12">
       <LandingSection />
       <CardSection />
       <BottomSection />
-      <Footer />
     </main>
   );
 }

@@ -5,23 +5,25 @@ import React from "react";
 export default function Navbar() {
   return (
     <div className="w-full flex flex-col h-full">
-      <nav className="w-full relative h-16 mx-auto bg-cafe-secondary text-white px-16 flex items-center justify-between">
-        <div className="flex gap-1 items-center">
-          <Image src="/logo.svg" alt="logo" width={30} height={30} />
-          <p className="text-xl font-bold font-playwrite">KoffeeZila</p>
-        </div>
-        <div className="flex gap-4 items-center">
-          <Link className="hover:underline font-poppins" href="/home">
-            Domů
-          </Link>
-          <Link className="hover:underline font-poppins" href="/about">
-            O Nás
-          </Link>
-          <Link className="hover:underline font-poppins" href="/Katalog">
-            Katalog
-          </Link>
-        </div>
-      </nav>
+      <div className="h-full w-full bg-cafe-secondary">
+        <nav className="w-full px-16 max-w-screen-xl mx-auto relative h-16 text-white flex items-center justify-between">
+          <div className="flex gap-1 items-center">
+            <Image src="/logo.svg" alt="logo" width={30} height={30} />
+            <p className="text-xl font-bold font-playwrite">KoffeeZila</p>
+          </div>
+          <div className="flex gap-4 items-center">
+            <Link className="hover:underline font-poppins" href="/home">
+              Domů
+            </Link>
+            <Link className="hover:underline font-poppins" href="/about">
+              O Nás
+            </Link>
+            <Link className="hover:underline font-poppins" href="/Katalog">
+              Katalog
+            </Link>
+          </div>
+        </nav>
+      </div>
       <div className="relative h-48">
         <div className="custom-shape-divider-top-1719069632">
           <svg
