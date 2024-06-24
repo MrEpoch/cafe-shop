@@ -3,23 +3,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
 .custom-shape-divider-bottom-1719175093 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
 }
 
 .custom-shape-divider-bottom-1719175093 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 116px;
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 116px;
 }
 
 .custom-shape-divider-bottom-1719175093 .shape-fill {
-    fill: #311F11;
+  fill: #311f11;
 }
 
 .custom-shape-divider-top-1719069632 {

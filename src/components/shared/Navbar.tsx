@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import Sidebar from "./Sidebar";
+import { Menu } from "lucide-react";
 
 export default function Navbar() {
   return (
@@ -11,16 +13,21 @@ export default function Navbar() {
             <Image src="/logo.svg" alt="logo" width={30} height={30} />
             <p className="text-xl font-bold font-playwrite">KoffeeZila</p>
           </div>
-          <div className="flex gap-4 items-center">
-            <Link className="hover:underline font-poppins" href="/home">
+          <div className="hidden sm:flex gap-4 items-center">
+            <Link className="hover:underline font-poppins" href="/">
               Domů
             </Link>
             <Link className="hover:underline font-poppins" href="/about">
               O Nás
             </Link>
-            <Link className="hover:underline font-poppins" href="/Katalog">
+            <Link className="hover:underline font-poppins" href="/catalog">
               Katalog
             </Link>
+          </div>
+          <div className="sm:hidden">
+            <Sidebar>
+              <Menu className="w-6 h-6" />
+            </Sidebar>
           </div>
         </nav>
       </div>
