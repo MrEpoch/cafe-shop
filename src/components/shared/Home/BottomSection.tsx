@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table";
 
-export default function BottomSection() {
+export default function BottomSection({ notTitle=false }) {
   const coffeCardData = [
     {
       text: "Berounová 521, Praha 3",
@@ -21,9 +21,11 @@ export default function BottomSection() {
 
   return (
     <section className="w-full py-16 text-white flex flex-col justify-center items-center gap-10 pt-48 min-h-screen">
-      <h1 className="lg:text-5xl sm:text-4xl text-3xl leading-snug font-bold font-anton text-center">
-        Přijď otestovat naší kávu
-      </h1>
+      {!notTitle && (
+        <h1 className="lg:text-5xl sm:text-4xl text-3xl leading-snug font-bold font-anton text-center">
+          Přijď otestovat naší kávu
+        </h1>
+      )}
       <div className="flex lg:flex-row flex-col items-center justify-between h-full gap-8 w-full">
         <div className="w-full flex items-center justify-center">
           <Image
