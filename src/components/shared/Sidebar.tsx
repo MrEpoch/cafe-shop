@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/sheet";
 import Image from "next/image";
 import Link from "next/link";
+import { Book, Coffee, Home } from "lucide-react";
 
 export default function Sidebar({ children }) {
   return (
@@ -29,20 +30,26 @@ export default function Sidebar({ children }) {
           </SheetTitle>
           <SheetDescription className="py-8">
             <div className="flex flex-col gap-4 text-white">
-              <Link className="hover:underline font-poppins text-md" href="/">
-                Domů
+              <Link
+                className="hover:underline flex items-center justify-start gap-4 font-poppins text-md pl-8"
+                href="/"
+              >
+                <Home className="w-4 h-4" />
+                <span>Domů</span>
               </Link>
               <Link
-                className="hover:underline font-poppins text-md"
+                className="hover:underline font-poppins text-md flex items-center justify-start gap-4 pl-8"
                 href="/about"
               >
-                O Nás
+                <Book className="w-4 h-4" />
+                <span>O Nás</span>
               </Link>
               <Link
-                className="hover:underline font-poppins text-md"
+                className="hover:underline font-poppins text-md flex items-center justify-start pl-8 gap-4"
                 href="/catalog"
               >
-                Katalog
+                <Coffee className="w-4 h-4" />
+                <span>Katalog</span>
               </Link>
             </div>
           </SheetDescription>

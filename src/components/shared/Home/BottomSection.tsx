@@ -26,7 +26,13 @@ export default function BottomSection() {
       </h1>
       <div className="flex lg:flex-row flex-col items-center justify-between h-full gap-8 w-full">
         <div className="w-full flex items-center justify-center">
-          <Image src="/coffee.png" alt="coffee" width={300} height={300} />
+          <Image
+            src="/fresh-coffe.jpg"
+            alt="coffee"
+            width={400}
+            height={400}
+            className="rounded-md object-cover"
+          />
         </div>
         <Table>
           <TableBody>

@@ -9,10 +9,10 @@ export default function Navbar() {
     <div className="w-full flex flex-col h-full">
       <div className="h-full w-full bg-cafe-secondary">
         <nav className="w-full px-16 max-w-screen-xl mx-auto relative h-16 text-white flex items-center justify-between">
-          <div className="flex gap-1 items-center">
+          <Link href="/" className="flex gap-1 items-center">
             <Image src="/logo.svg" alt="logo" width={30} height={30} />
             <p className="text-xl font-bold font-playwrite">KoffeeZila</p>
-          </div>
+          </Link>
           <div className="hidden sm:flex gap-4 items-center">
             <Link className="hover:underline font-poppins" href="/">
               Domů
