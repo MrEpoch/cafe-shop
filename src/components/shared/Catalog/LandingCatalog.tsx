@@ -1,6 +1,7 @@
 import { CatalogLandingIcons } from "@/lib/constants";
 import Image from "next/image";
 import React from "react";
+import { AnimatedDiv } from "../AnimatedElements";
 
 export default function LandingCatalog() {
   return (
@@ -11,7 +12,7 @@ export default function LandingCatalog() {
             Káva jak má být
           </h1>
         </div>
-        <div className="flex items-center justify-center gap-16 border-r-2 border-gray-300 shadow-2xl p-4 sm:p-6 ">
+        <AnimatedDiv animationLength={1} side="left" className="flex items-center justify-center gap-16 border-r-2 border-gray-300 shadow-2xl p-4 sm:p-6 ">
           {CatalogLandingIcons.map((item) => (
             <IconWithText
               key={item.text}
@@ -19,7 +20,7 @@ export default function LandingCatalog() {
               text={item.text}
             />
           ))}
-        </div>
+        </AnimatedDiv>
       </div>
     </section>
   );

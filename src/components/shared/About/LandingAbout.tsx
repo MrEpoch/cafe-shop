@@ -30,9 +30,9 @@ export default function LandingAbout() {
           </span>
         </p>
       </AnimatedDiv>
-      <div className="">
+      <AnimatedDiv side="right" className="">
         <Image src="/coffee-beans.jpg" width={400} height={400} alt="coffee" />
-      </div>
+      </AnimatedDiv>
     </section>
   );
 }
