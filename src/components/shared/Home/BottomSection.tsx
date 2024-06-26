@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table";
 
-export default function BottomSection({ notTitle=false }) {
+export default function BottomSection({ notTitle = false }) {
   const coffeCardData = [
     {
       text: "Berounová 521, Praha 3",

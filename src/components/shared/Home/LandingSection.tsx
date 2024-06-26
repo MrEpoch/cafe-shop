@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { AnimatedDiv } from "../AnimatedElements";
 
 export default function LandingSection() {
   return (
     <section className=" w-full flex gap-16 2xl:flex-row flex-col justify-between items-center text-white">
-      <div className="flex flex-col gap-6 w-full items-start 2xl:pt-0 pt-16">
+      <AnimatedDiv className="flex flex-col gap-6 w-full items-start 2xl:pt-0 pt-16">
         <h1 className="lg:text-5xl sm:text-4xl text-3xl font-bold font-anton xl:w-96 leading-snug">
           Moderní káva ve stylu
         </h1>
@@ -29,8 +30,11 @@ export default function LandingSection() {
             data-rounded="rounded-lg"
           ></span>
         </Link>
-      </div>
-      <div className="flex items-center justify-center w-full h-full">
+      </AnimatedDiv>
+      <AnimatedDiv
+        side="right"
+        className="flex items-center justify-center w-full h-full"
+      >
         <Image
           src="/StarBehindCoffee.svg"
           className=" max-h-full max-w-full object-cover sm:block hidden md:animate-spin-slow-reversed"
@@ -45,7 +49,7 @@ export default function LandingSection() {
           width={300}
           height={300}
         />
-      </div>
+      </AnimatedDiv>
     </section>
   );
 }
