@@ -1,7 +1,11 @@
 import Image from "next/image";
 import React from "react";
 
-export default function CoffeeCardCatalog({ cardContent }) {
+export default function CoffeeCardCatalog({
+  cardContent,
+}: {
+  cardContent: any;
+}) {
   return (
     <div className="flex flex-col gap-2 max-w-[300px] w-full hover:shadow-md hover:shadow-cafe-secondary group rounded-md cursor-pointer p-4">
       <div className="p-[1px] bg-white shadow-2xl rounded-md items-center flex justify-center overflow-hidden">

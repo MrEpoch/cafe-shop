@@ -11,7 +11,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Book, Coffee, Home } from "lucide-react";
 
-export default function Sidebar({ children }) {
+export default function Sidebar({ children }: any) {
   return (
     <Sheet>
       <SheetTrigger>{children}</SheetTrigger>

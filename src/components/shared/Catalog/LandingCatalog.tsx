@@ -12,7 +12,11 @@ export default function LandingCatalog() {
             Káva jak má být
           </h1>
         </div>
-        <AnimatedDiv animationLength={1} side="left" className="flex items-center justify-center gap-16 border-r-2 border-gray-300 shadow-2xl p-4 sm:p-6 ">
+        <AnimatedDiv
+          animationLength={1}
+          side="left"
+          className="flex items-center justify-center gap-16 border-r-2 border-gray-300 shadow-2xl p-4 sm:p-6 "
+        >
           {CatalogLandingIcons.map((item) => (
             <IconWithText
               key={item.text}
@@ -26,7 +30,7 @@ export default function LandingCatalog() {
   );
 }
 
-function IconWithText({ SvgIcon, text }) {
+function IconWithText({ SvgIcon, text }: any) {
   return (
     <div className="flex flex-col gap-4 items-center justify-center">
       <Image src={SvgIcon} width={30} height={30} alt={text} />

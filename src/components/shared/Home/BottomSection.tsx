@@ -50,7 +50,7 @@ export default function BottomSection({ notTitle = false }) {
   );
 }
 
-function CoffeCardElement({ Svg, text }) {
+function CoffeCardElement({ Svg, text }: any) {
   return (
     <TableCell className="font-medium flex gap-4 items-center">
       <Svg width={30} height={30} />
